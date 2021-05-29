@@ -467,7 +467,7 @@ section {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: #fff;
+  background: #ffc81a;
   padding: 80px 0;
 }
 
@@ -490,7 +490,7 @@ section {
 }
 
 #about .about-content {
-  background: #fff;
+  background: #ffc81a;
 }
 
 #about .about-title {
@@ -817,7 +817,7 @@ section {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  background: #ffc81a;
   padding: 80px 0 60px 0;
 }
 

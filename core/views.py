@@ -30,7 +30,7 @@ def contact(request):
                 message = message
         )
 
-        send_mail(f"Name - {name}, Email - {email}, Phone Number - {phone}, Subject- {subject}",message,"urbanspacerealtors.rkl@gmail.com",["ishwarjethwaniillustration@gmail.com"])
+        send_mail(f"Name - {name}, Email - {email}, Phone Number - {phone}, Subject- {subject}",message,"urbanspacerealtors.rkl@gmail.com",["hr.rsdastudio@gmail.com"])
         messages.success( request,"Thank you for contacting us")
         return redirect("home")
 
