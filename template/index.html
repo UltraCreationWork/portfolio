@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>RSDA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link type="text/css" href="{% static 'assets/img/logo.png' %}" rel="icon">
+  <link type="text/css" href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link type="text/css" href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link type="text/css" href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link type="text/css" href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img src="{% static 'assets/img/1.png' %}" alt="">
+        </div>
+
+        <h1>Welcome to Rahul Sinha & Design Alliance</h1>
+        <h2>We provide <span class="typed" data-typed-items="Architectural,Interior,Landscape"></span> services</h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">Get Strated</a>
+          <a href="#services" class="btn-services">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo mr-auto"><img src="{% static 'assets/img/1.png' %}" alt=""></a>
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">About Us</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container wow fadeInUp">
+        <div class="row">
+
+          <div class="col-lg-6 about-img">
+            <img src="{% static 'assets/img/about.jpg' %}" alt="">
+          </div>
+
+          <div class="col-md-6 about-content">
+            <h2 class="about-title">Experts In Architectural Services in Rourkela</h2>
+            <p class="about-text">
+              Rahul Sinha & Design Alliance (RSDA) is an experienced firm of architects.
+              RSDA was formed in 2019 with its design innovation center at Rourkela & Ranchi, with the thought of
+              practicing sustainable, dynamic and green architecture.
+              We believe in doing work of the highest possible quality, and lavish care on both fundamental design ideas
+              as well as minute details.
+            </p>
+            <p class="about-text">
+              RSDA works in the areas of Sustainability, Architectural consultancy, Affordable housing, Mixed-Use
+              Design, Apartment, Commercial building design, Institutional buildings, Industrial buildings, Hospital
+              design, Interior Design, Landscape Design and related areas.
+            </p>
+            <p class="about-text">
+              At RSDA, we explore and develop architectural, interior and landscape design for various type of projects
+              in context responsive design approach. RSDA applies creative design solutions to difficult design issues,
+              whether it is planning a building on a limited site or providing a design within the parameters of a
+              potentially restrictive construction budget. The firm provides the expertise and attention to each project
+              as it deserves and requires.
+            </p>
+            <p class="about-text" style="">
+              "We Create spaces by exploring your goals, Priorities, Lifestyles and Tastes with an aesthetics sense"
+            </p>
+            <p class="about-text">
+              We always believed that you deserve the home that you always wanted. Through research, innovation, highly
+              creative solutions with years of experience that embody our clients' necessities, we advance in this
+              field. Our diverse and multi-talented team is intense, passionate, and client-focused delivering 100%
+              results. To work hard, nurture, and cultivate the right ideas is what we've always considered.
+            </p>
+            <p class="about-text">
+              Transparency, Quality and Trust defines our company and we strongly believe in it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container wow fadeInUp">
+        <div class="row">
+
+          <div class="col-md-12">
+            <h3 class="section-title">Our Services</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          {% for service in services %}
+          <div class="col-lg-4 col-md-6 service-item">
+            <div class="service-icon"><i class="bi bi-house-door"></i></div>
+            <h4 class="service-title"><a href="">{{ service.name }}</a></h4>
+            <p class="service-description">{{ service.dics|safe }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+    <!-- <section id="portfolio">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Portfolio</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Testimonials</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+        </div>
+        {% for testi in testimonial %}
+        <div class="row">
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="{{ testi.prop_img.url }}" alt=""></div>
+              <h4>{{ testi.name }}</h4>
+              <span>{{ testi.prof }}</span>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="quote">
+              <b><img src="{% static 'assets/img/quote_sign_left.png' %}" alt=""></b> {{ testi.disc }} <small><img src="{% static 'assets/img/quote_sign_right.png' %}"
+                  alt=""></small>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <!-- <div class="row">
+          <div class="col-md-9">
+            <div class="quote">
+              <b><img src="{% static 'assets/img/quote_sign_left.png' %}" alt=""></b> Sed ut perspiciatis unde omnis
+              iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+              illo inventore veritatis architecto beatae. <small><img src="{% static 'assets/img/quote_sign_right.png' %}"
+                  alt=""></small>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic"><img src="{% static 'assets/img/client-2.jpg' %}" alt=""></div>
+              <h4>Sara Wilsson</h4>
+              <span>Odeo Inc</span>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Our Team</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">We cater according to your needs. Our team has Architects, Engineers, Interior Designers, Project Managers, Surveyors, Highly Skilled Contractors and Builders.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          {% for member in members %}
+
+          <div class="col-md-3">
+            <div class="member">
+              <div class="pic"><img src="{{ member.img.url }}" alt=""></div>
+              <h4>{{ member.name }}</h4>
+              <span>{{ member.prof }}</span>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Contact Us</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description"></p>
+          </div>
+        </div>
+        {% for add in address %}
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>{{ add.location_line_1 }}<br>{{ add.location_line_2 }} <br> {{ add.location_line_3 }}</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>{{ add.email }}</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>{{ add.mobile_number }} </p>
+              </div>
+
+            </div>
+          </div>
+          {% endfor %}
+
+          <div class="col-lg-5 col-md-8" style="margin-left: 5%;">
+            <div class="form">
+              <form action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="number" class="form-control" name="phone" id="phone" placeholder="Your Mobile Number"
+                    required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  {% if messages %}
+                  {% for message in messages %}
+                  <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    {% endfor %}
+                    {% endif %}
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>RSDA</strong>. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
