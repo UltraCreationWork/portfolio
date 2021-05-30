@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Testimonial Form</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            /* Full screen width and height */
+            width: 100%;
+            min-height: 100vh;
+
+            /* Centers the container in the middle of the screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+            background-color: rgb(220, 220, 220);
+        }
+
+        #container {
+            perspective: 25px;
+        }
+
+        #inner {
+            width: 20em;
+            height: 25em;
+            padding: 3%;
+            background-color: white;
+            box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s;
+            -webkit-transition: transform 0.5s;
+            -moz-transition: transform 0.5s;
+            -o-transition: transform 0.5s;
+        }
+
+        .container {
+            background-image: url('../static/assets/img/background.jpg');
+            margin-top: 10%;
+            padding: 3%;
+            box-shadow: 3px 5px #888888;
+            perspective: 40px;
+        }
+
+        .col {
+            margin-top: 5%;
+
+
+
+        }
+
+        .form-control {
+            background-color: rgb(230, 227, 225);
+            color: rgb(0, 0, 0);
+        }
+
+        .form-control:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+
+        }
+
+        .custom-file {
+            background-color: rgb(230, 227, 225);
+            color: rgba(0, 0, 0, 0);
+        }
+
+        .custom-file:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+
+        }
+    </style>
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col">
+                <div class="container-main">
+                    <h4>Testimonial Form for your high class expeirnce with us</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div id="inner">
+                    <form action="{% url 'form' %}" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <div class="col">
+                                <input type="text" class="form-control" name="name" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" name="prof" placeholder="Profession">
+                            </div>
+                            <div class="col">
+                                <div class="input-group mb-3">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile02" name="prop_img">
+                                        <label class="custom-file-label"  for="inputGroupFile02">Profile Image</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="disc"
+                                    placeholder="Write your valuble comment here"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="form-group" style="margin-left: 5%;">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            // Init
+            var container = document.getElementById("container"),
+                inner = document.getElementById("inner");
+
+            // Mouse
+            var mouse = {
+                _x: 0,
+                _y: 0,
+                x: 0,
+                y: 0,
+                updatePosition: function (event) {
+                    var e = event || window.event;
+                    this.x = e.clientX - this._x;
+                    this.y = (e.clientY - this._y) * -1;
+                },
+                setOrigin: function (e) {
+                    this._x = e.offsetLeft + Math.floor(e.offsetWidth / 2);
+                    this._y = e.offsetTop + Math.floor(e.offsetHeight / 2);
+                },
+                show: function () {
+                    return "(" + this.x + ", " + this.y + ")";
+                }
+            };
+
+            // Track the mouse position relative to the center of the container.
+            mouse.setOrigin(container);
+
+            //-----------------------------------------
+
+            var counter = 0;
+            var updateRate = 10;
+            var isTimeToUpdate = function () {
+                return counter++ % updateRate === 0;
+            };
+
+            //-----------------------------------------
+
+            var onMouseEnterHandler = function (event) {
+                update(event);
+            };
+
+            var onMouseLeaveHandler = function () {
+                inner.style = "";
+            };
+
+            var onMouseMoveHandler = function (event) {
+                if (isTimeToUpdate()) {
+                    update(event);
+                }
+            };
+
+            //-----------------------------------------
+
+            var update = function (event) {
+                mouse.updatePosition(event);
+                updateTransformStyle(
+                    (mouse.y / inner.offsetHeight / 2).toFixed(2),
+                    (mouse.x / inner.offsetWidth / 2).toFixed(2)
+                );
+            };
+
+            var updateTransformStyle = function (x, y) {
+                var style = "rotateX(" + x + "deg) rotateY(" + y + "deg)";
+                inner.style.transform = style;
+                inner.style.webkitTransform = style;
+                inner.style.mozTransform = style;
+                inner.style.msTransform = style;
+                inner.style.oTransform = style;
+            };
+
+            //-----------------------------------------
+
+            container.onmouseenter = onMouseEnterHandler;
+            container.onmouseleave = onMouseLeaveHandler;
+            container.onmousemove = onMouseMoveHandler;
+        })();
+
+    </script>
+</body>
+
+</html>

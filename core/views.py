@@ -38,5 +38,19 @@ def contact(request):
 
 
 
-
+def testimonialform(request):
+    if request.method == "POST":
+        name = request.POST.get("name")
+        prof = request.POST.get("prof")
+        prop_img = request.FILES.get("prop_img")
+        disc = request.POST.get("disc")
+        Testimonial.objects.create(
+            name = name,
+            prof = prof,
+            prop_img = prop_img,
+            disc  = disc
+        )
+        messages.success(request,"Thank you for giving your valuble feedback here")
+        return redirect("home")
+    return render(request,"form.html")
 
