@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'core',
     'storages',
+    'django.contrib.sitemaps',
 ]
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'IN'
